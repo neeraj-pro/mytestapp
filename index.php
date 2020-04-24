@@ -3,7 +3,7 @@
           <title>welcome</title>
       </head>
       <body>
-<h1>Hello world welcome to openshift</h1>
+<h1>Hello world welcome to openshift abc xyz</h1>
 <center>  
   <?php
   
