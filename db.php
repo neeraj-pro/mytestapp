@@ -7,6 +7,14 @@
 <h1>test6</h1>
 <?php
 
+echo $h= gethostname();
+echo '<br>';
+
+$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+
+echo $hostname;
+echo '<br>';
+
 //echo $dbhost = getenv("HOSTNAME");
 
 echo $dbhost = "mysql-55-rhel7-2-ntt5d";
