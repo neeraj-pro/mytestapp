@@ -3,7 +3,7 @@
 $MYSQL_USER = 'user_neeraj';
 $MYSQL_PASSWORD = 'password_neeraj';
 $MYSQL_DATABASE = 'database_neeraj';
-$HOSTNAME = 'registry.access.redhat.com/openshift3/mysql-55-rhel7';
+$HOSTNAME = 'mysql-55-rhel7';
 
 $mysqli = new mysqli($HOSTNAME,$MYSQL_USER,$MYSQL_PASSWORD,$MYSQL_DATABASE);
 
