@@ -1,5 +1,14 @@
+<html>
+<head>
+<title>Finally done</title>
+</head>
+
+<body>
+
 <?php
-echo $dbhost = getenv("HOSTNAME");
+//echo $dbhost = getenv("HOSTNAME");
+
+echo $dbhost = "mysql-55-rhel7-2-ntt5d";
 echo '<br>';
 echo $dbport = getenv("MYSQL_55_RHEL7_SERVICE_PORT");
 echo '<br>';
@@ -19,3 +28,5 @@ if ($connection->connect_errno) {
 }
 $connection->close();
 ?>
+</body>
+</html>
