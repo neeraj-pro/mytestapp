@@ -20,20 +20,20 @@ echo '<br>';
 echo $dbname = getenv("MYSQL_DATABASE");
 echo '<br>';
 
-//$connection = new mysql($dbhost, $dbuser, $dbpwd, $dbname);
+//$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 //if ($connection->connect_errno) {
-//    echo  $mysql->connect_error;
+//    echo  $mysqli->connect_error;
 //    exit();
 //} else {
 //    printf("Connected to the database");
 //}
 
-$link = mysql_connect($dbhost, $dbuser, $dbpwd);
+$link = mysqli_connect($dbhost, $dbuser, $dbpwd);
 if (!$link) {
-    die('Could not connect: ' . mysql_error());
+    die('Could not connect: ' . mysqli_error());
 }
 echo 'Connected successfully';
-mysql_close($link);
+mysqli_close($link);
 
 //$connection->close();
 ?>
