@@ -6,6 +6,7 @@
 <body>
 
 <?php
+
 //echo $dbhost = getenv("HOSTNAME");
 
 echo $dbhost = "mysql-55-rhel7-2-ntt5d";
@@ -19,9 +20,9 @@ echo '<br>';
 echo $dbname = getenv("MYSQL_DATABASE");
 echo '<br>';
 
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$connection = new mysql($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
-    echo  $mysqli->connect_error;
+    echo  $mysql->connect_error;
     exit();
 } else {
     printf("Connected to the database");
