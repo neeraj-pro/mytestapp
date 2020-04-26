@@ -3,7 +3,8 @@
           <title>welcome</title>
       </head>
       <body>
-<h1>Hello world welcome to openshift abc xyz</h1>
+<h1>Hello world welcome to openshift abc xyz</h1><br><br>
+<a href="db.php">Check DB Connection </a> 
 <center>  
   <?php
   
