@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<h1>test6</h1>
+<h1>test8</h1>
 <?php
 
 echo $h= gethostname();
@@ -17,7 +17,7 @@ echo '<br>';
 
 //echo $dbhost = getenv("HOSTNAME");
 
-echo $dbhost = "mysql-55-rhel7-2-ntt5d";
+echo $dbhost = "10-131-16-11.router-default.openshift-ingress.svc.cluster.local";
 echo '<br>';
 echo $dbport = getenv("MYSQL_55_RHEL7_SERVICE_PORT");
 echo '<br>';
