@@ -4,7 +4,7 @@
 </head>
 
 <body>
-
+<h1>test6</h1>
 <?php
 
 //echo $dbhost = getenv("HOSTNAME");
@@ -20,14 +20,22 @@ echo '<br>';
 echo $dbname = getenv("MYSQL_DATABASE");
 echo '<br>';
 
-$connection = new mysql($dbhost, $dbuser, $dbpwd, $dbname);
-if ($connection->connect_errno) {
-    echo  $mysql->connect_error;
-    exit();
-} else {
-    printf("Connected to the database");
+//$connection = new mysql($dbhost, $dbuser, $dbpwd, $dbname);
+//if ($connection->connect_errno) {
+//    echo  $mysql->connect_error;
+//    exit();
+//} else {
+//    printf("Connected to the database");
+//}
+
+$link = mysql_connect($dbhost, $dbuser, $dbpwd);
+if (!$link) {
+    die('Could not connect: ' . mysql_error());
 }
-$connection->close();
+echo 'Connected successfully';
+mysql_close($link);
+
+//$connection->close();
 ?>
 </body>
 </html>
