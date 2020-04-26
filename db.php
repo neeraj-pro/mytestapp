@@ -1,25 +1,16 @@
- <?php
+<?php
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbport = getenv("MYSQL_SERVICE_PORT");
+$dbuser = getenv("MYSQL_USER");
+$dbpwd = getenv("MYSQL_PASSWORD");
+$dbname = getenv("MYSQL_DATABASE");
 
-$MYSQL_USER = 'user_neeraj';
-$MYSQL_PASSWORD = 'password_neeraj';
-$MYSQL_DATABASE = 'database_neeraj';
-$HOSTNAME = 'mysql-55-rhel7';
-
-$mysqli = new mysqli($HOSTNAME,$MYSQL_USER,$MYSQL_PASSWORD,$MYSQL_DATABASE);
-
-// Check connection
-
-if ($mysqli -> connect_errno) {
-
-  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-
-  exit();
+$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+if ($connection->connect_errno) {
+    printf("Connect failed: %s\n", $mysqli->connect_error);
+    exit();
+} else {
+    printf("Connected to the database");
 }
-
-else {
-
-echo "Connection failed";
-
-}
-
-?> 
+$connection->close();
+?>
