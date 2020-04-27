@@ -1,10 +1,10 @@
 <html>
 <head>
-<title>Finally done</title>
+<title>Welcome</title>
 </head>
 
 <body>
-<h1>test8</h1>
+<h1>test9</h1>
 <?php
 
 echo $h= gethostname();
@@ -17,7 +17,7 @@ echo '<br>';
 
 //echo $dbhost = getenv("HOSTNAME");
 
-echo $dbhost = "10-131-16-11.router-default.openshift-ingress.svc.cluster.local";
+echo $dbhost = "172.30.191.168:3306";
 echo '<br>';
 echo $dbport = getenv("MYSQL_55_RHEL7_SERVICE_PORT");
 echo '<br>';
