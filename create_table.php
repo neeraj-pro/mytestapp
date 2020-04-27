@@ -1,6 +1,6 @@
  <?php
 
-require("db.php");
+require("db_config.php");
 
 // sql to create table
 $sql = "CREATE TABLE MyGuests (
