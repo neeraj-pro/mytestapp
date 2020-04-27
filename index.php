@@ -4,7 +4,11 @@
       </head>
       <body>
 <h1>Hello world welcome to openshift abc xyz</h1><br><br>
-<a href="db_config.php" target="_blank">Check DB Connection </a> 
+
+<a href="db_config.php" target="_blank">Click her to check DB connection now </a> <br><br>
+<a href="create_table.php" target="_blank">Click her to create table now </a> <br><br>
+
+
 <center>  
   <?php
   
